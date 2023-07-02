@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Proyecto de Innovación Social</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="estilos-mascotas.css"/>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  </head>
+  <body>
+    <header>
+      <a href="" class="logo">¡MascotasYa!</a>
+
+      <ul class="navlist">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="perros-callejeros.html">Callejeros</a></li>
+          <li><a href="perros-adopcion.html">Adopciones</a></li>
+          <li><a href="perros-adopcion.html">Perdidos</a></li>
+          <li><a href="rescatados.html">Rescatados</a></li>
+          <li><a href="asociados.html">Asociados</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+
+      <div class="bx bx-menu" id="menu-icon"></div>
+  </header>
+
+    <section id="perros-en-adopcion">
+      <h2>Perros Perdidos</h2>
+      <hr>
+      
+      <!-- Button trigger modal -->
+      <div class="d-grid gap-2">
+      <button type="button" class="btn btn-warning mb-3" data-bs-toggle="modal" data-bs-target="#exampleModal">
+      Publicar tu perro perdido
+      </button>
+      </div>
+<!-- Modal -->
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Sigue los pasos y publica a tu mascota</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="recipient-name" class="col-form-label">Nombre de tu mascota</label>
+            <input type="text" class="form-control" id="recipient-name" placeholder="Ejemplo: Firulays">
+          </div>
+          <div class="mb-3">
+            <label for="message-text" class="col-form-label">Descripcion breve de tu mascota</label>
+            <textarea class="form-control" id="message-text" placeholder="Ejemplo: Se perdio en tal lugar / tiene una enfermedad, etc."  style="resize: none; height: 120px;"></textarea>
+          </div>
+          <div class="mb-3">
+            <label for="recipient-name" class="col-form-label">Tu numero de celular</label>
+            <input type="text" class="form-control" id="recipient-name" placeholder="Ejemplo: 910 739 910">
+          </div>
+          <div class="mb-3">
+            <label for="recipient-name" class="col-form-label">Tu facebook</label>
+            <input type="text" class="form-control" id="recipient-name" placeholder="Ejemplo: https://www.facebook.com/mascotas.ya">
+          </div>
+          <div class="mb-3">
+            <label for="recipient-name" class="col-form-label">Tu WhatsApp</label>
+            <input type="text" class="form-control" id="recipient-name" placeholder="Ejemplo: 910 739 910">
+          </div>
+          <div class="mb-3">
+            <label for="recipient-name" class="col-form-label">Imagen donde se vea claramente a tu mascota</label>
+            <input type="file" class="form-control" id="recipient-name" accept=".jpg, .png, .webp .jpeg .gif .svg">
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+        <button type="button" class="btn btn-primary">Publicar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+      <div class="lista-perros">
+        <!-- Ejemplo de perro en adopción -->
+        <div class="perro">
+          <img src="imagenes/perros-perdidos/perdido1.jfif" alt="Perro en adopción" />
+          <h3 class="nombre-del-perro">Coco</h3>
+          <hr>
+          <p class="descripcion-perro">Se perdio en el Ovalo Pachacutec responde al nombre de Coco, tiene alrededor de 6 meses de edad, si alguien lo encontro o sabe de su paradero comunicarse por favor se dara buena recompensa..</p>
+          <div class="botones">
+            <a class="contacto-boton llamada" target="_blank" href="tel:945738000">Contactar</a>
+            <a class="contacto-boton whats" target="_blank" href="https://wa.link/egx0ys">WhatsApp</a>
+            <a class="contacto-boton face" target="_blank" href="https://www.facebook.com/profile.php?id=100087270621056">Facebook</a>
+          </div>
+        </div>
+
+        <div class="perro">
+            <img src="imagenes/perros-perdidos/perdido2.jpg" alt="Perro en adopción" />
+            <h3 class="nombre-del-perro">Luna</h3>
+            <hr>
+            <p class="descripcion-perro">Se perdio en el Ovalo Pachacutec responde al nombre de Coco, tiene alrededor de 6 meses de edad, si alguien lo encontro o sabe de su paradero comunicarse por favor se dara buena recompensa..</p>
+            <div class="botones">
+              <a class="contacto-boton llamada" target="_blank" href="tel:945738000">Contactar</a>
+              <a class="contacto-boton whats" target="_blank" href="https://wa.link/egx0ys">WhatsApp</a>
+              <a class="contacto-boton face" target="_blank" href="https://www.facebook.com/profile.php?id=100087270621056">Facebook</a>
+            </div>
+          </div>
+
+          <div class="perro">
+            <img src="imagenes/perros-perdidos/perdido3.jfif" alt="Perro en adopción" />
+            <h3 class="nombre-del-perro">Lola</h3>
+            <hr>
+            <p class="descripcion-perro">Se perdio en el Ovalo Pachacutec responde al nombre de Coco, tiene alrededor de 6 meses de edad, si alguien lo encontro o sabe de su paradero comunicarse por favor se dara buena recompensa..</p>
+            <div class="botones">
+              <a class="contacto-boton llamada" target="_blank" href="tel:945738000">Contactar</a>
+              <a class="contacto-boton whats" target="_blank" href="https://wa.link/egx0ys">WhatsApp</a>
+              <a class="contacto-boton face" target="_blank" href="https://www.facebook.com/profile.php?id=100087270621056">Facebook</a>
+            </div>
+          </div>
+
+          <div class="perro">
+            <img src="imagenes/perros-perdidos/perdido4.jfif" alt="Perro en adopción" />
+            <h3 class="nombre-del-perro">Chiqui</h3>
+            <hr>
+            <p class="descripcion-perro">Se perdio en el Ovalo Pachacutec responde al nombre de Coco, tiene alrededor de 6 meses de edad, si alguien lo encontro o sabe de su paradero comunicarse por favor se dara buena recompensa..</p>
+            <div class="botones">
+              <a class="contacto-boton llamada" target="_blank" href="tel:945738000">Contactar</a>
+              <a class="contacto-boton whats" target="_blank" href="https://wa.link/egx0ys">WhatsApp</a>
+              <a class="contacto-boton face" target="_blank" href="https://www.facebook.com/profile.php?id=100087270621056">Facebook</a>
+            </div>
+          </div>
+
+          <div class="perro">
+            <img src="imagenes/perros-perdidos/perdido4.jpg" alt="Perro en adopción" />
+            <h3 class="nombre-del-perro">Pluton</h3>
+            <hr>
+            <p class="descripcion-perro">Se perdio en el Ovalo Pachacutec responde al nombre de Coco, tiene alrededor de 6 meses de edad, si alguien lo encontro o sabe de su paradero comunicarse por favor se dara buena recompensa..</p>
+            <div class="botones">
+              <a class="contacto-boton llamada" target="_blank" href="tel:945738000">Contactar</a>
+              <a class="contacto-boton whats" target="_blank" href="https://wa.link/egx0ys">WhatsApp</a>
+              <a class="contacto-boton face" target="_blank" href="https://www.facebook.com/profile.php?id=100087270621056">Facebook</a>
+            </div>
+          </div>
+
+          <div class="perro">
+            <img src="imagenes/perros-perdidos/perdido6.jpg" alt="Perro en adopción" />
+            <h3 class="nombre-del-perro">Frodo</h3>
+            <hr>
+            <p class="descripcion-perro">Se perdio en el Ovalo Pachacutec responde al nombre de Coco, tiene alrededor de 6 meses de edad, si alguien lo encontro o sabe de su paradero comunicarse por favor se dara buena recompensa..</p>
+            <div class="botones">
+              <a class="contacto-boton llamada" target="_blank" href="tel:945738000">Contactar</a>
+              <a class="contacto-boton whats" target="_blank" href="https://wa.link/egx0ys">WhatsApp</a>
+              <a class="contacto-boton face" target="_blank" href="https://www.facebook.com/profile.php?id=100087270621056">Facebook</a>
+            </div>
+          </div>
+
+          <div class="perro">
+            <img src="imagenes/perros-perdidos/perdido7.jfif" alt="Perro en adopción" />
+            <h3 class="nombre-del-perro">Dumbo</h3>
+            <hr>
+            <p class="descripcion-perro">Se perdio en el Ovalo Pachacutec responde al nombre de Coco, tiene alrededor de 6 meses de edad, si alguien lo encontro o sabe de su paradero comunicarse por favor se dara buena recompensa..</p>
+            <div class="botones">
+              <a class="contacto-boton llamada" target="_blank" href="tel:945738000">Contactar</a>
+              <a class="contacto-boton whats" target="_blank" href="https://wa.link/egx0ys">WhatsApp</a>
+              <a class="contacto-boton face" target="_blank" href="https://www.facebook.com/profile.php?id=100087270621056">Facebook</a>
+            </div>
+          </div>
+          
+
+        <!-- Agrega más perros en adopción aquí -->
+        <!-- Puedes repetir el bloque de código de ejemplo para cada perro -->
+      </div>
+    </section>
+
+    <footer>
+      <p class="derechos-autor">Derechos de autor &copy; 2023 Proyecto de Innovación Social</p>
+      <a class="autor" href="">Desarrollado por Junior Aldair Garcia Flores</a>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+  </body>
+</html>
